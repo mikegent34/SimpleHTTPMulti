@@ -65,9 +65,9 @@ def get_knock_sequence():
                         return True
                 else:
                     i = 0
-    except Exception:
+    except Exception as e:
         print("Something bad happened handling the knocks.")
-        print(Exception.with_traceback)
+        print(str(e))
         return False
 
 
